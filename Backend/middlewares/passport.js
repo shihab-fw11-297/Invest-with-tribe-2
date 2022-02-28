@@ -3,7 +3,7 @@ const { SECRET } = require("../config");
 const { Strategy, ExtractJwt } = require("passport-jwt");
 
 const opts = {
-    //taken bearer
+    //take bearer
     jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
     secretOrKey: SECRET
 };

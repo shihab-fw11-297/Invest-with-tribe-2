@@ -68,17 +68,20 @@ const SignIn = () => {
                     </div>
                     <form onSubmit={handleSignin}>
                         <input type="text" name="username" onChange={handleInput} placeholder="Enter Username" value={userData.username}/>
+                        
                         <input type="password" name="password" onChange={handleInput} placeholder="Enter Password" value={userData.password} />
+                       
                         <select name="role" onChange={handleInput} value={userData.role}>
                         <option disabled defaultValue>Select Your Roles</option>
                             <option value="Customer">Customer</option>
                             <option value="admin">admin</option>
                         </select>
+                       
                         <input type="submit" onClick={handleSignin} />
+                       
                         <p className="AlreadyRegister">If you are not Registerd Then Please <b><Link to="/register">Click Here</Link></b></p>
-                        {signuperror ? <p className="AlreadyRegister">Something Wrong Please Check and Try Gain Leter</p> : "" }
-                        
-                      
+                        {signuperror ? <p className="AlreadyRegister">Something Wrong Please Check and Try Gain Leter</p> : "" } 
+                    
                     </form>
                 </div>
             </div>

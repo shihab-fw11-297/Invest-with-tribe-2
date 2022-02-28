@@ -31,7 +31,7 @@ const startApp = async () => {
   
       // Start Listenting for the server on PORT
       app.listen(PORT, () =>
-        success({ message: `Server started on PORT ${PORT}`, badge: true })
+        success({ message: `Server started on PORT ${PORT}`})
       );
     } catch (err) {
       error({
